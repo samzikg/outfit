@@ -1,0 +1,116 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class ThemeManager {
+  static ThemeData lightTheme() {
+    return ThemeData(
+      useMaterial3: true,
+      scaffoldBackgroundColor: const Color(0xFFF1F0F4),
+      colorScheme: const ColorScheme(
+        brightness: Brightness.light,
+        primary: Color(0xFF00629D),
+        onPrimary: Color(0xFFFFFFFF),
+        primaryContainer: Color(0xFFCFE5FF),
+        onPrimaryContainer: Color(0xFF001D34),
+        secondary: Color(0xFF526070),
+        onSecondary: Color(0xFFFFFFFF),
+        secondaryContainer: Color(0xFFD5E4F7),
+        onSecondaryContainer: Color(0xFF0E1D2A),
+        tertiary: Color(0xFF695779),
+        onTertiary: Color(0xFFFFFFFF),
+        tertiaryContainer: Color(0xFFF0DBFF),
+        onTertiaryContainer: Color(0xFF231532),
+        error: Color(0xFFBA1A1A),
+        onError: Color(0xFFFFFFFF),
+        errorContainer: Color(0xFFFFDAD6),
+        onErrorContainer: Color(0xFF410002),
+        outline: Color(0xFF72777F),
+        surface: Color(0xFFF9F9FC),
+        onSurface: Color(0xFF1A1C1E),
+        surfaceContainerHighest: Color(0xFFDEE3EB),
+        onSurfaceVariant: Color(0xFF42474E),
+        inverseSurface: Color(0xFF2F3033),
+        onInverseSurface: Color(0xFFF1F0F4),
+        inversePrimary: Color(0xFF99CBFF),
+        shadow: Color(0xFF000000),
+        surfaceTint: Color(0xFF00629D),
+      ),
+      appBarTheme: AppBarTheme(
+        backgroundColor: const Color(0xFFF1F0F4),
+        elevation: 0,
+        scrolledUnderElevation: 0,
+        titleSpacing: 10.w,
+        titleTextStyle: TextStyle(
+          fontSize: 16.sp,
+          fontWeight: FontWeight.w500,
+          color: Colors.black87,
+        ),
+      ),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
+        selectedItemColor: const Color(0xFF00629D),
+        unselectedItemColor: Colors.grey,
+        elevation: 8,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+      ),
+    );
+  }
+
+  static ThemeData darkTheme() {
+    return ThemeData(
+      useMaterial3: true,
+      scaffoldBackgroundColor: const Color(0xFF1A1C1E),
+      colorScheme: const ColorScheme(
+        brightness: Brightness.dark,
+        primary: Color(0xFF99CBFF),
+        onPrimary: Color(0xFF003355),
+        primaryContainer: Color(0xFF004A78),
+        onPrimaryContainer: Color(0xFFCFE5FF),
+        secondary: Color(0xFFB9C8DA),
+        onSecondary: Color(0xFF243240),
+        secondaryContainer: Color(0xFF3A4857),
+        onSecondaryContainer: Color(0xFFD5E4F7),
+        tertiary: Color(0xFFD4BEE6),
+        onTertiary: Color(0xFF392A49),
+        tertiaryContainer: Color(0xFF504060),
+        onTertiaryContainer: Color(0xFFF0DBFF),
+        error: Color(0xFFFFB4AB),
+        errorContainer: Color(0xFF93000A),
+        onError: Color(0xFF690005),
+        onErrorContainer: Color(0xFFFFDAD6),
+        surface: Color(0xFF121316),
+        onSurface: Color(0xFFC6C6C9),
+        surfaceContainerHighest: Color(0xFF42474E),
+        onSurfaceVariant: Color(0xFFC2C7CF),
+        outline: Color(0xFF8C9199),
+        inverseSurface: Color(0xFFE2E2E5),
+        onInverseSurface: Color(0xFF1A1C1E),
+        inversePrimary: Color(0xFF00629E),
+        shadow: Color(0xFF000000),
+        surfaceTint: Color(0xFF99CBFF),
+      ),
+      appBarTheme: AppBarTheme(
+        backgroundColor: const Color(0xFF1A1C1E),
+        elevation: 0,
+        scrolledUnderElevation: 0,
+        titleSpacing: 10.w,
+        titleTextStyle: TextStyle(
+          fontSize: 16.sp,
+          fontWeight: FontWeight.w500,
+          color: Colors.white,
+        ),
+      ),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: const Color(0xFF1A1C1E),
+        selectedItemColor: const Color(0xFF99CBFF),
+        unselectedItemColor: Colors.grey,
+        elevation: 8,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+      ),
+    );
+  }
+}
